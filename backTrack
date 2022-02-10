@@ -1,0 +1,13 @@
+void backTracking(	ans,  // 保存结果的数组 
+					nums, // 输入
+					visited, // 树枝去重使用, 可选
+					temp, // 保存中间数据的数组
+					target, // 终止条件
+					start){ // 叶子节点的起始位置
+    if(终止条件满足结果){ 收集结果; return}; 
+    for(遍历nums 从start开始的所有子节点){ // 单层搜索
+        交换; // temp.push_back(nums[i]); visited[i-1] = true;
+        递归; // backTracking(ans, nusm, visited, temp, target, i或i+1)
+        换回; // temp.pop_back(nums[i]); visited[i-1] = false;
+    }
+}
